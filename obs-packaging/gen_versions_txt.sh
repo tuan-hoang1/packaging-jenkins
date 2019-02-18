@@ -45,6 +45,7 @@ gen_version_file() {
 	kernel_version=$(get_from_kata_deps "assets.kernel.version" "${kata_version}")
 	#Remove extra 'v'
 	kernel_version=${kernel_version#v}
+	kernel_version="4.19.8"
 
 	golang_version=$(get_from_kata_deps "languages.golang.meta.newest-version" "${kata_version}")
 	golang_sha256=$(curl -s -L "https://storage.googleapis.com/golang/go${golang_version}.linux-${ARCH}.tar.gz.sha256")
