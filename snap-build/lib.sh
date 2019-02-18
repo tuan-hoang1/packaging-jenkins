@@ -77,7 +77,7 @@ ping_vm() {
 	return 1
 }
 
-# arg1: qemu system: ppc64, aarch64 or x86_64
+# arg1: qemu system: ppc64, aarch64 or x86_64 or s390x
 # arg2: cpu model
 # arg3: machine type
 # arg4: ip

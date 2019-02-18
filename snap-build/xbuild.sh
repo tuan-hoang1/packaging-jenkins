@@ -10,7 +10,7 @@
 
 source lib.sh
 
-readonly supported_archs=(all amd64 ppc64 arm64)
+readonly supported_archs=(all amd64 ppc64 arm64 s390x)
 
 seed_dir=seed
 seed_img=seed.img
